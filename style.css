@@ -77,6 +77,7 @@ h2 {
   font-weight: 600;
   margin: 32px 0 12px;
   color: #1a1a2e;
+  text-align: left;
 }
 
 h2:first-of-type {
