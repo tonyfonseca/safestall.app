@@ -124,13 +124,68 @@ footer nav a {
   font-weight: 500;
 }
 
+.footer-sep {
+  margin: 0 8px;
+  color: #ccc;
+}
+
 .copyright {
   font-size: 0.85rem;
   color: #999;
 }
 
-.ally-flag {
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  text-align: left;
+}
+
+.contact-form label {
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: #1a1a2e;
   margin-top: 12px;
+}
+
+.contact-form input,
+.contact-form textarea {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+  font-size: 1rem;
+  padding: 10px 12px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background: #fff;
+  color: #1a1a2e;
+  transition: border-color 0.2s;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+  outline: none;
+  border-color: #2563eb;
+}
+
+.contact-form textarea {
+  resize: vertical;
+}
+
+.contact-form button {
+  margin-top: 16px;
+  padding: 12px;
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+  font-size: 1rem;
+  font-weight: 600;
+  color: #fff;
+  background: #2563eb;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.contact-form button:hover {
+  background: #1d4ed8;
 }
 
 .back-link {

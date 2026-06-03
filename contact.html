@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact — Safestall</title>
+  <meta name="description" content="Get in touch with the Safestall team.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" type="image/png" href="favicon.png">
+  <link rel="apple-touch-icon" href="apple-touch-icon.png">
+</head>
+<body>
+  <div class="container">
+    <a href="index.html" class="back-link">&larr; Back to Safestall</a>
+    <header>
+      <h1>Contact</h1>
+      <p class="tagline">Questions, feedback, or just want to say hi?</p>
+    </header>
+    <main>
+      <form action="https://formsubmit.co/hello@tonyfonseca.com" method="POST" class="contact-form">
+        <input type="hidden" name="_subject" value="Safestall — New message">
+        <input type="hidden" name="_captcha" value="false">
+        <input type="hidden" name="_next" value="https://safestall.app/thanks.html">
+        <input type="text" name="_honey" style="display:none">
+
+        <label for="name">Name</label>
+        <input type="text" id="name" name="name" placeholder="Your name" required>
+
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" placeholder="Your email" required>
+
+        <label for="message">Message</label>
+        <textarea id="message" name="message" placeholder="What's on your mind?" rows="5" required></textarea>
+
+        <button type="submit">Send</button>
+      </form>
+    </main>
+    <footer>
+      <p class="copyright">&copy; 2026 Safestall. All rights reserved.</p>
+    </footer>
+  </div>
+</body>
+</html>
