@@ -86,6 +86,7 @@ h2:first-of-type {
 main p, main li {
   color: #444;
   margin-bottom: 12px;
+  text-align: left;
 }
 
 main ul {
