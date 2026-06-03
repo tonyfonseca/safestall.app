@@ -150,6 +150,8 @@ footer nav a {
 
 .contact-form input,
 .contact-form textarea {
+  display: block;
+  width: 100%;
   font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
   font-size: 1rem;
   padding: 10px 12px;
@@ -158,6 +160,7 @@ footer nav a {
   background: #fff;
   color: #1a1a2e;
   transition: border-color 0.2s;
+  -webkit-appearance: none;
 }
 
 .contact-form input:focus,
