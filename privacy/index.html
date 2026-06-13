@@ -38,7 +38,6 @@
         <li><strong>Refuge Restrooms</strong> — your approximate latitude and longitude (rounded to ~100 m) are sent to <code>refugerestrooms.org</code> to query their restroom database.</li>
         <li><strong>OpenStreetMap (Overpass API)</strong> — your approximate latitude and longitude are sent to <code>overpass-api.de</code> to query for nearby gender-neutral restroom nodes.</li>
         <li><strong>Apple MapKit</strong> — the app uses Apple's on-device MapKit framework to display the map, to enrich listings with business names and hours via Apple Places, and to load street-level imagery (Look Around) for a listing you select. MapKit requests are handled by iOS itself and are subject to <a href="https://www.apple.com/legal/privacy/">Apple's Privacy Policy</a>.</li>
-        <li><strong>On-device summaries</strong> — on supported devices, Apple's on-device language model may summarize the community notes from a listing's duplicate entries into a short blurb. This runs entirely on your device — the notes (already public Refuge data) are never sent anywhere, and no new data is collected.</li>
       </ul>
       <p>Your location is used in real time and is <strong>never stored, logged, or transmitted to any server we control</strong>. Safestall has no backend — the app talks directly to the services listed above. No personal information beyond approximate coordinates is included in any request.</p>
       <p>When you ask Siri or run a Shortcut, Apple handles your request. Safestall uses your location once, in memory, to answer — nothing is stored or shared, and the app never hands your restroom searches to Spotlight or Siri Suggestions.</p>
@@ -66,6 +65,9 @@
 
       <h2>On-device data</h2>
       <p>Safestall may store a small amount of data locally on your device (such as your preferences) using standard iOS storage. This data never leaves your device.</p>
+
+      <h2>On-device summaries</h2>
+      <p>On supported devices, Apple's on-device language model may summarize the community notes from a listing's duplicate entries into a short blurb. This runs entirely on your device — the notes (already public Refuge data) are never sent anywhere, and no new data is collected.</p>
 
       <h2>Children's privacy</h2>
       <p>Safestall does not collect personal information from anyone, including children. The app requires only location permission to function and stores nothing about its users.</p>
