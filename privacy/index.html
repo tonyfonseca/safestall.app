@@ -4,9 +4,9 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Privacy Policy — Safestall</title>
-  <meta name="description" content="Safestall privacy policy. We don't collect your data. No accounts, no analytics, no tracking. Your location is never stored or shared.">
+  <meta name="description" content="Safestall privacy policy. No accounts and no tracking — only anonymous, opt-out usage analytics that can't identify you. Your location is never stored or shared.">
   <meta property="og:title" content="Privacy Policy — Safestall">
-  <meta property="og:description" content="Safestall doesn't collect your data. No accounts, no analytics, no tracking. Your location is never stored or shared.">
+  <meta property="og:description" content="Safestall has no accounts and no tracking — only anonymous, opt-out usage analytics that can't identify you. Your location is never stored or shared.">
   <meta property="og:url" content="https://safestall.app/privacy/">
   <meta property="og:type" content="website">
   <link rel="canonical" href="https://safestall.app/privacy/">
@@ -23,11 +23,11 @@
     <a href="/" class="back-link">&larr; Back to Safestall</a>
     <header>
       <h1>Privacy Policy</h1>
-      <p class="tagline">Last updated: June 26, 2026</p>
+      <p class="tagline">Last updated: June 29, 2026</p>
     </header>
     <main>
       <h2>The short version</h2>
-      <p>Safestall doesn't collect your data. No accounts, no analytics, no tracking. Your location is never stored or shared. The one exception is feedback you choose to send on a listing (thumbs up/down) — that sends a permanent random identifier so duplicate reports can be recognized, and nothing else about you. Details below.</p>
+      <p>Safestall has no accounts and no tracking, and your location is never stored or shared. We use one privacy-first analytics tool (TelemetryDeck) to see which features get used — it records anonymous events that can't be traced back to you, and you can turn it off in Settings. The other exception is feedback you choose to send on a listing (thumbs up/down) — that sends a permanent random identifier so duplicate reports can be recognized, and nothing else about you. Details below.</p>
 
       <h2>About Safestall</h2>
       <p>Safestall is a free, non-commercial iOS app that helps you find safe, gender-neutral restrooms nearby. It's a passion project — there is no business model, no ads, and no monetization.</p>
@@ -46,9 +46,10 @@
       <h2>No accounts</h2>
       <p>Safestall does not require or offer user accounts. There is no sign-up, no login, and no profile.</p>
 
-      <h2>No analytics or tracking</h2>
-      <p>We do not use any third-party analytics SDKs — no Firebase, no Mixpanel, no Amplitude, no Segment, nothing. We do not use ad networks or attribution SDKs. We do not use crash reporting SDKs that collect device identifiers.</p>
-      <p>Apple's built-in App Analytics (which is anonymous, privacy-preserving, and off by default per your device settings) is the only analytics mechanism available. We have no access to individual-level data through it.</p>
+      <h2>Analytics</h2>
+      <p>Safestall uses TelemetryDeck, a privacy-first analytics service, to see which features people use so we can make the app better. It records simple, anonymous events — things like "opened a listing's detail" or "tapped the map-style toggle." It never records your location, the specific restrooms you look at, an account (there isn't one), or anything that identifies you.</p>
+      <p>TelemetryDeck is built to stay anonymous: the identifier it uses is scrambled (hashed) twice — once on your device and again on its server — so neither TelemetryDeck nor we can ever tie events back to you. Its servers are in the EU. You can turn this off any time in Settings under "Share anonymous usage."</p>
+      <p>That is the only analytics SDK we use — no Firebase, no Mixpanel, no Amplitude, no Segment. We do not use ad networks or attribution SDKs, and we do not use crash reporting SDKs that collect device identifiers. Apple's built-in App Analytics (anonymous, off by default per your device settings) may also be available; we have no access to individual-level data through it.</p>
 
       <h2>Third-party services</h2>
       <p>Safestall communicates with the following services. When the app looks up restrooms, each receives only the approximate location data described above — no user profiles and no personal information. The one exception is community feedback you choose to send, described under the enrichment server below.</p>
@@ -57,8 +58,9 @@
         <li><strong>OpenStreetMap / Overpass API</strong> (<a href="https://wiki.openstreetmap.org/wiki/Overpass_API">overpass-api.de</a>) — open geographic data. <a href="https://wiki.osmfoundation.org/wiki/Privacy_Policy">Privacy policy</a>.</li>
         <li><strong>Apple MapKit / Apple Places</strong> — on-device framework provided by iOS. <a href="https://www.apple.com/legal/privacy/">Privacy policy</a>.</li>
         <li><strong>Safestall enrichment server (Supabase)</strong> — a server we operate that returns pre-computed restroom metadata (currently short summaries of public community notes, whether a listing is still listed, and a corrected display name), looked up by the public IDs of the listings in your map area. Those lookups send only those IDs and your IP address — no account, precise location, or anything else about you. If you choose to give feedback on a listing (the thumbs up/down on its detail), the report sends that listing's public ID, your feedback, and a permanent random identifier this app generates — so duplicate reports can be recognized. That identifier is not your name, account, device ID, or location (there are none of those); it is the only thing that persists between your reports.</li>
+        <li><strong>TelemetryDeck (analytics)</strong> — a privacy-first analytics service that records anonymous feature-usage events (described under Analytics above). It receives an event name and a double-hashed identifier that can't be traced back to you — never your location, account, or which restrooms you view. EU-hosted; you can turn it off in Settings.</li>
       </ul>
-      <p>We do not share data with ad networks, analytics providers, data brokers, or any other third parties. The only data the app sends anywhere is what is described above.</p>
+      <p>Beyond the privacy-first services listed above, we do not share data with ad networks, data brokers, or anyone else. We don't sell data, and there are no ads. The only data the app sends anywhere is what is described above.</p>
 
       <h2>Accuracy of listings</h2>
       <p>The restroom listings come from Refuge Restrooms and OpenStreetMap — open databases that real people add to over time. We don't write, own, or check these listings. We just help you find them.</p>
